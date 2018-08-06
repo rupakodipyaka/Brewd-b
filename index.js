@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect to mongodb
-mongoose.connect('mongodb://localhost/brewd');
+mongoose.connect(process.env.MANGODB_URI);
 mongoose.Promise = global.Promise;
 
 //set up static files
@@ -25,6 +25,6 @@ app.use(function(err, req, res, next){
 });
 
 // listen for requests
-app.listen(process.env.port || 4000, function(){
+app.listen(process.env.port || 3000, function(){
     console.log('now listening for requests');
 });
