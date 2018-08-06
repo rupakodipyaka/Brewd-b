@@ -8,9 +8,9 @@ const app = express();
 console.log('1');
 
 // connect to mongodb
-mongoose.connect('mongodb://user:pass@host:port/dbname',function(err,db){
+mongoose.connect('mongodb://user:pass@host:port/dbname',{ useNewUrlParser: true },function(err,db){
         if(err){
-         console.log(err);
+         console.log('error');
        }else {
            console.log('connected to the Test db');
        }
@@ -43,5 +43,6 @@ app.use(function(err, req, res, next){
 console.log('7');
 // listen for requests
 app.listen(process.env.port || 3000, function(){
+    console.log('8');
     console.log('now listening for requests');
 });
