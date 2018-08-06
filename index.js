@@ -6,7 +6,13 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect to mongodb
-mongoose.connect('mongodb://user:pass@host:port/dbname');
+mongoose.connect('mongodb://user:pass@host:port/dbname',function(err,db){
+        if(err){
+         console.log(err);
+       }else {
+           console.log('connected to the Test db');
+       }
+     });
 mongoose.Promise = global.Promise;
 
 //set up static files
