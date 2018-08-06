@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect to mongodb
-mongoose.connect(process.env.MANGODB_URI);
+mongoose.connect('mongodb://user:pass@host:port/dbname');
 mongoose.Promise = global.Promise;
 
 //set up static files
