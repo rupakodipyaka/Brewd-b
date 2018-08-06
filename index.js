@@ -8,14 +8,13 @@ const app = express();
 console.log('1');
 
 // connect to mongodb
-mongoose.connect('mongodb://user:pass@host:port/dbname',{ useNewUrlParser: true },function(err,db){
+mongoose.connect('mongodb://heroku_fz2x0xz9:t9377t39inc1i49nk7bppohc76@ds113942.mlab.com:13942/heroku_fz2x0xz9',{ useNewUrlParser: true },function(err,db){
         if(err){
          console.log('error');
        }else {
            console.log('connected to the Test db');
        }
      });
-
 console.log('2');
 mongoose.Promise = global.Promise;
 console.log('3');
