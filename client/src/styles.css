@@ -1,0 +1,47 @@
+body{
+  background: linear-gradient(#fda074, #ff783a, #fda074 );
+}
+.user-type {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: table;
+}
+.user-login {
+
+  height: 100vh;
+  width: 100vw;
+
+}
+.user-signup {
+  height: 100vh;
+  width: 100vw;
+}
+
+.search-cafe{
+  height: 100vh;
+  width: 100vw;
+}
+
+.signupform{
+  padding: 2em;
+}
+
+.search-cafe-container{
+  height: 98%
+}
+
+.search-cafe-card{
+  height: 97%;
+  padding: 1em;
+}
+
+Form{
+  width: 100%;
+  display: inline;
+}
+
+.row2{
+  height: 50%;
+  padding: 1em;
+}
