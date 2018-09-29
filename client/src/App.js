@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import './styles.css';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
-import { ListGroup, ListGroupItem, Card, Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { ListGroup, ListGroupItem, Card, Container, Row, Col, Button, Form, Input } from 'reactstrap';
 
 
 class App extends Component {
@@ -50,7 +49,7 @@ class App extends Component {
             </Input>
           </Col>
             <Col xs="2">
-              <Button color="success" block type="submit">Find Cafes</Button>
+              <Button className="butt" block type="submit">Find Cafes</Button>
               </Col>
               </Row>
           </Form>

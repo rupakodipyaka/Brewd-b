@@ -59,7 +59,7 @@ function postData(url = ``, data = {}) {
           <Input type="password" name="password" id="examplePassword" placeholder="Enter password" />
         </FormGroup>
         </Jumbotron>
-        <Button block href="#SC" color="success">Login</Button>
+        <Button block href="#SC" className="butt">Login</Button>
         <br/>
       </Col>
       </Row>

@@ -30,9 +30,9 @@ class Header extends Component {
   }
   render() {
     return (
-      <div>
-        <Navbar className="navbar" color="success" light expand="md">
-          <NavbarBrand href="/">Brewd</NavbarBrand>
+      <div className="navbar1">
+        <Navbar dark expand="md">
+          <NavbarBrand href="#"><img src="favicon.png"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

@@ -45,3 +45,23 @@ Form{
   height: 50%;
   padding: 1em;
 }
+
+.navbar1{
+  background: linear-gradient(0.25turn,#2a544b, #306357, #3a7869 );
+}
+
+.butt{
+  background: linear-gradient(0.25turn,#2a544b, #306357, #2a544b );
+}
+
+Img{
+  height: 65px;
+}
+
+.jumbo{
+  background-image: url('coffee.jpg');
+}
+
+.jumbo_text{
+  color: white;
+}
