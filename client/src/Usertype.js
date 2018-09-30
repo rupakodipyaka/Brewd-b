@@ -16,8 +16,8 @@ class Usertype extends Component {
         <hr className="my-2" />
         <p>Please Confirm.</p>
           <Row>
-          <Col sm={{ size: 3, offset: 3 }}><Link to="/signup" style={{ textDecoration: 'none' }}><Button size="lg" block className="butt">New User</Button></Link></Col>
-          <Col sm={{ size: 3}}><Link to="/login" style={{ textDecoration: 'none' }}><Button size="lg" block className="butt">Registered User</Button></Link></Col>
+          <Col className="select" sm={{ size: 3, offset: 3 }}><Link to="/signup" style={{ textDecoration: 'none' }}><Button size="lg" block className="butt">New User</Button></Link></Col>
+          <Col className="select" sm={{ size: 3}}><Link to="/login" style={{ textDecoration: 'none' }}><Button size="lg" block className="butt">Registered User</Button></Link></Col>
           </Row>
       </Jumbotron>
       </Col>

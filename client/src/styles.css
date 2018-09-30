@@ -7,12 +7,7 @@ body{
   width: 100vw;
   display: table;
 }
-.user-login {
 
-  height: 100vh;
-  width: 100vw;
-
-}
 .user-signup {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -22,10 +17,12 @@ body{
   padding-bottom: 2em;
 }
 
-.search-cafe{
-  height: 100vh;
-  width: 100vw;
+
+.tab {
+    overflow: scroll;
+    height: 100%;
 }
+
 
 .signupform{
   padding: 2em;
@@ -35,24 +32,29 @@ body{
   padding: 2em;
 }
 
-.search-cafe-container{
-  height: 98%
+.search-cafe{
+  padding: 2em;
 }
 
 .search-cafe-card{
-  height: 97%;
+  height: 100%;
   padding: 1em;
 }
 
 Form{
   width: 100%;
-  display: inline;
+  height: auto;
 }
 
 .row2{
-  height: 50%;
-  padding: 0.2em;
-  padding-top: 0.6em;
+  height: 50vh;
+  overflow:"hidden";
+  padding: 0em;
+}
+
+.row1{
+  height: 10%;
+
 }
 
 .navbar1{
@@ -78,10 +80,14 @@ Img{
 .cafelist{
   background: rgba(204, 204, 204, 0.5);
   padding: 1em;
-  height: 100%;
+  height: 46vh;
   color:#2a544b ;
 }
 
 .input1{
   color:#2a544b ;
+}
+
+.select{
+  padding-bottom: 0.5em;
 }
