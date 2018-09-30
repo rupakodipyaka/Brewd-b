@@ -14,8 +14,12 @@ body{
 
 }
 .user-signup {
-  height: 100vh;
-  width: 100vw;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.admin{
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .search-cafe{
@@ -24,6 +28,10 @@ body{
 }
 
 .signupform{
+  padding: 2em;
+}
+
+.adminform{
   padding: 2em;
 }
 
@@ -43,7 +51,8 @@ Form{
 
 .row2{
   height: 50%;
-  padding: 1em;
+  padding: 0.2em;
+  padding-top: 0.6em;
 }
 
 .navbar1{
@@ -55,7 +64,7 @@ Form{
 }
 
 Img{
-  height: 65px;
+  height: 50px;
 }
 
 .jumbo{
@@ -64,4 +73,15 @@ Img{
 
 .jumbo_text{
   color: white;
+}
+
+.cafelist{
+  background: rgba(204, 204, 204, 0.5);
+  padding: 1em;
+  height: 100%;
+  color:#2a544b ;
+}
+
+.input1{
+  color:#2a544b ;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
-
+import { Link } from 'react-router-dom';
 
 
 class Signup extends Component {
@@ -111,7 +111,9 @@ function postData(url = ``, data = {}) {
           <Label>Mobile No.</Label>
           <Input type="text" name="mobileno" id="mobileNo" placeholder="0123456789"/>
         </FormGroup>
-        <Button href="#RU" className="butt">Sign Up</Button>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Button className="butt">Sign Up</Button>
+      </Link>
       </Form>
     </Card>
     </Container>

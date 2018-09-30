@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Jumbotron, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Usertype extends Component {
   render() {
@@ -15,8 +16,8 @@ class Usertype extends Component {
         <hr className="my-2" />
         <p>Please Confirm.</p>
           <Row>
-          <Col sm={{ size: 3, offset: 3 }}><Button size="lg" block href="#NU" className="butt">New User</Button></Col>
-          <Col sm={{ size: 3}}><Button size="lg" block href="#RU" className="butt">Registered User</Button></Col>
+          <Col sm={{ size: 3, offset: 3 }}><Link to="/signup" style={{ textDecoration: 'none' }}><Button size="lg" block className="butt">New User</Button></Link></Col>
+          <Col sm={{ size: 3}}><Link to="/login" style={{ textDecoration: 'none' }}><Button size="lg" block className="butt">Registered User</Button></Link></Col>
           </Row>
       </Jumbotron>
       </Col>

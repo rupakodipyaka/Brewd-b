@@ -10,6 +10,20 @@ router.get('/brewd', (req, res, next) => {
   });
 });
 
+router.get('/brewd/roasterList', (req, res, next) => {
+  Brewd.collection.distinct("coffeeRoaster").then(function(brewd){
+    res.send(brewd);
+    console.log(brewd);
+  });
+});
+
+router.get('/brewd/milkList', (req, res, next) => {
+  Brewd.collection.distinct("milkBrand").then(function(brewd){
+    res.send(brewd);
+    console.log(brewd);
+  });
+});
+
 // add a new ninja to the db
 router.post('/brewd', (req, res, next) => {
     Brewd.create(req.body).then(function(brewd){

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Container, Row, Col, Jumbotron, Button, Form, FormGroup, Label, Input } from 'reactstrap';
-
+import { Link } from 'react-router-dom';
 
 class Login extends Component {
   constructor(props) {
@@ -59,7 +59,9 @@ function postData(url = ``, data = {}) {
           <Input type="password" name="password" id="examplePassword" placeholder="Enter password" />
         </FormGroup>
         </Jumbotron>
-        <Button block href="#SC" className="butt">Login</Button>
+        <Link to="/app" style={{ textDecoration: 'none' }}>
+        <Button block className="butt">Login</Button>
+      </Link>
         <br/>
       </Col>
       </Row>
